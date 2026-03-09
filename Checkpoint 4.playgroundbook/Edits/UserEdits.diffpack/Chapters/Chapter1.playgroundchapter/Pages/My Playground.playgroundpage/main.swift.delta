@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Checkpoint 4
+
+enum errors : Error {
+    case outOfBounds, noRoot
+}
+
+
+func squareRoot(_ num: Int) throws -&gt; Int {
+    if num &lt; 1 || num &gt; 10_000 {
+        throw errors.outOfBounds
+    }
+    
+    for i in 1...1000 {
+        if(i*i == num){
+            return i
+        }
+    }
+    
+    throw errors.noRoot
+}
+
+
+do{
+    let sqRtNum = 100
+    let result = try squareRoot(sqRtNum)
+    print("The square root of \(sqRtNum) is \(result)")
+}catch(errors.noRoot){
+    print("No sqaure root number was found")
+}catch(errors.outOfBounds){
+    print("Error, please use a number between 1-10,000")
+}catch{
+    print("An error occured")
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 626}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

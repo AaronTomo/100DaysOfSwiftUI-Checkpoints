@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>ModifiedContent</key>
-			<string>//Checkpoint 11
+			<string>//Checkpoint 6
 
 struct Car {
     let model: String
@@ -51,7 +51,7 @@ for _ in 1...11 {
 }
 </string>
 			<key>ModifiedRange</key>
-			<string>{1, 885}</string>
+			<string>{1, 884}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>

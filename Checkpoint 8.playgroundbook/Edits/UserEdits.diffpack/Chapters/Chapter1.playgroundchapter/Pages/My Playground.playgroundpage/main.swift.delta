@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Checkpoint 8 
+
+protocol Building {
+    var rooms: Int { get set }
+    var cost: Int { get set }
+    var estateAgentName : String { get set }
+    
+    func summary() -&gt; Void
+}
+
+struct Office : Building {
+    var rooms: Int
+    var cost: Int
+    var estateAgentName: String
+
+    
+    func summary() {
+        print(
+            """
+            Summary of Office.
+            Number of rooms: \(rooms)
+            Cost of the project: \(cost)
+            Estate agent name: \(estateAgentName)
+            """
+        )
+    }
+}
+
+struct House : Building {
+    var rooms: Int
+    var cost: Int
+    var estateAgentName: String
+
+    func summary() {
+        print(
+            """
+            Summary of house.
+            Number of rooms: \(rooms)
+            Cost of the project: \(cost)
+            Estate agent name: \(estateAgentName)
+            """
+        )
+    }
+
+    
+}
+
+
+let o = Office(rooms: 24, cost: 1_000_000, estateAgentName: "Aaron estate Agent")
+o.summary()
+
+let h = House(rooms: 5, cost: 66_000, estateAgentName: "Local House Agent")
+h.summary()
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1061}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
